@@ -20,9 +20,9 @@ public class DepartmentController {
         return departmentService.saveDepartment(department);
     }
 
-    @GetMapping("/{Id}")
-    public Department findByDepartmentId(@PathVariable Long departmentId){
+    @GetMapping("/{id}")
+    public Department findDepartmentById(@PathVariable("id") Long departmentId){
         log.info("Inside getDepartmentById method in DepartmentController");
-        return departmentService.findByDepartmentId(departmentId);
+        return departmentService.findDepartmentById(departmentId);
     }
 }

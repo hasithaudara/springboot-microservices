@@ -17,7 +17,7 @@ public class DepartmentService {
         return departmentRepository.save(department);
     }
 
-    public Department findByDepartmentId(Long departmentId) {
+    public Department findDepartmentById(Long departmentId) {
         log.info("Inside getDepartmentById method in DepartmentService");
         return departmentRepository.findByDepartmentId(departmentId);
     }
